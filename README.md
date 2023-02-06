@@ -1,6 +1,7 @@
 # Bundler test repo
 
-This is a reproducible case where `Gemfile.lock` doesn't include platform-specific gems for all gems that have them.
+
+This was a reproducible case where `Gemfile.lock` doesn't include platform-specific gems for all gems that have them. It was fixed in [rubygems/rubygems#5743: Platform specific gems not being found by bundler](https://github.com/rubygems/rubygems/issues/5743)
 
 Here you can see google-protobuf has the platform-specific versions, but another gem grpc does not even though it does have platform-specific versions.
 
